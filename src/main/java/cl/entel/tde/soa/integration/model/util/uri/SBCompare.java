@@ -1,0 +1,13 @@
+package cl.entel.tde.soa.integration.model.util.uri;
+
+import cl.entel.tde.soa.integration.model.esb.Uri;
+
+public class SBCompare implements TransportCompare {
+
+    @Override
+    public boolean equals(Uri source, Uri destination) {
+        String sourcePath = source.getPath().replace("/.", "/");
+        String destinationPath = destination.getPath().replace("/.", "/");
+        return sourcePath.equals(destinationPath);
+    }
+}
