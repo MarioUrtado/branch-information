@@ -43,6 +43,9 @@ public class Bootstrap {
     @Value("${osb.project}")
     private String projectPath;
 
+    @Value("${osb.application}")
+    private String application;
+
     @Value("${git.remote.uri}")
     private String gitRemoteUri;
 
@@ -61,21 +64,9 @@ public class Bootstrap {
     public void run(){
         try {
             Map<String, String> parameters = new HashMap<>();
-
-            File workspace = new File(gitWorkspaceDir+ File.separator );
-            File workspaceGit = new File(gitWorkspaceDir+ File.separator  +File.separator + ".git");
-            workspace.delete();
-            workspace.mkdir();
-
-            parameters.put("workspace", workspace.getPath().replace("\\", "/"));
-
-            String serviceName = gitBranchName.split("-")[2];
-            String serviceVersion = gitBranchName.split("-")[3];
-
-            String applicationPath = workspace.getPath() + File.separator + "01.FUENTES/ES_"+serviceName+"_"+serviceVersion+"/01.OSB/01.WORKSPACE/ENTEL_ServiceBusApp";
-            parameters.put("application", applicationPath.replace("\\", "/"));
-            this.projectPath = workspace.getPath() + File.separator + "01.FUENTES/ES_"+serviceName+"_"+serviceVersion+"/01.OSB/01.WORKSPACE/ENTEL_ServiceBusApp/ES_"+serviceName+"_"+serviceVersion;
+            this.projectPath = this.application + File.separator + this.projectPath;
             parameters.put("project", this.projectPath);
+            parameters.put("application", this.application);
 
             List<File> files = Files.walk(Paths.get(projectPath))
                     .filter(Files::isRegularFile)
