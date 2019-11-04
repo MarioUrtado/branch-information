@@ -1,6 +1,6 @@
 package cl.entel.tde.soa.integration.model.util.uri;
 
-import cl.entel.tde.soa.integration.model.esb.Uri;
+import cl.entel.tde.soa.integration.domain.Uri;
 
 public class JMSCompare implements TransportCompare {
     @Override

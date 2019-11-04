@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.8.RELEASE")
     }
 }
 apply plugin: 'java'
@@ -22,7 +22,7 @@ bootJar {
 
 repositories {
     mavenCentral()
-    mavenLocal()
+    maven {url 'http://nexus.saas.hand-china.com/content/repositories/rdc/'}
 }
 
 
@@ -31,7 +31,13 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("joda-time:joda-time:2.9.9")
-    compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter"){
+        exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+    }
+    compile( 'org.springframework.boot:spring-boot-starter-data-mongodb'){
+        exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+    }
+    compile("org.springframework.boot:spring-boot-starter-log4j2")
     compile("com.fasterxml.jackson.core:jackson-core:2.9.5")
     compile("com.fasterxml.jackson.core:jackson-databind:2.9.5")
     compile("org.eclipse.jgit:org.eclipse.jgit:5.2.1.201812262042-r")

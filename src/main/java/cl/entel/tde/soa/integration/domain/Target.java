@@ -1,6 +1,12 @@
 package cl.entel.tde.soa.integration.domain;
 
+
+import org.springframework.data.annotation.Id;
+
 public class Target {
+
+    @Id
+    private String id;
 
     private String targetProvider;
 
@@ -9,7 +15,6 @@ public class Target {
     private String targetOperation;
 
     private String targetVersion;
-
 
     private String targetName;
 
@@ -23,6 +28,14 @@ public class Target {
         this.targetApi = targetApi;
         this.targetOperation = targetOperation;
         this.targetVersion = targetVersion;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTargetProvider() {

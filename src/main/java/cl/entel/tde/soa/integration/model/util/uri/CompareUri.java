@@ -1,7 +1,6 @@
 package cl.entel.tde.soa.integration.model.util.uri;
 
-import cl.entel.tde.soa.integration.model.esb.Uri;
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
+import cl.entel.tde.soa.integration.domain.Uri;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

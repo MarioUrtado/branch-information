@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <RollingRandomAccessFile name="FileAppender" fileName="logs/out.log"
+                                 filePattern="logs/out-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <Pattern>%d|%m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="50MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1000" />
+        </RollingRandomAccessFile >
+
+    </Appenders>
+    <Loggers>
+        <Logger   name="cl.entel.tde.soa.integration.domain" level="trace" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>

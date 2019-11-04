@@ -1,14 +1,14 @@
 package cl.entel.tde.soa.integration.model.builder;
 
-import cl.entel.tde.soa.integration.model.esb.BusinessService;
+import cl.entel.tde.soa.integration.domain.*;
 import cl.entel.tde.soa.integration.model.esb.OWSMPolicy;
-import cl.entel.tde.soa.integration.model.esb.Uri;
 import cl.entel.tde.soa.integration.xml.xpath.XPathExecutor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import javax.xml.xpath.XPathConstants;
@@ -23,28 +23,7 @@ public class BusinessServiceBuilder {
     @Autowired
     private XPathExecutor xPathExecutor;
 
-    public BusinessService build(Map<String, String> parameters, String filePath){
-        try{
-            Document document = xPathExecutor.getBuilder().parse(filePath);
-            String aux = parameters.get("application") + "/";
-            String name = filePath.split(aux)[1];
-            String uri = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/URI/value", XPathConstants.STRING);
-            String transport = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-id", XPathConstants.STRING);
-
-            String dispatchPolicy = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-specific/dispatch-policy", XPathConstants.STRING);
-
-            Uri url = new Uri(uri);
-
-            List<OWSMPolicy> policies = this.getPolicySet(document);
-
-            BusinessService resource = new BusinessService(filePath, name, url, transport, dispatchPolicy, policies);
-
-            return resource;
-        } catch (Exception e ){
-            e.printStackTrace();
-        }
-        return null;
-    }
+    Logger logger = LoggerFactory.getLogger(BusinessServiceBuilder.class);
 
     public List<OWSMPolicy> getPolicySet(Document document){
         List<OWSMPolicy> policies = new ArrayList<>();
@@ -64,5 +43,38 @@ public class BusinessServiceBuilder {
             policies.add(policy);
         }
         return policies;
+    }
+
+
+
+
+    public EntityBus buildEntity(Map<String, String> parameters, String filePath){
+        EntityBus resource = new EntityBus();
+        try{
+            Document document = xPathExecutor.getBuilder().parse(filePath);
+            String aux = parameters.get("application") + "/";
+            String name = filePath.split(aux)[1];
+            resource.setName(name);
+            resource.setPath(filePath);
+            resource.setType(ResourceBusType.BUSINESS_SERVICE);
+            String uri = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/URI/value", XPathConstants.STRING);
+            String transport = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-id", XPathConstants.STRING);
+            resource.addProperty(new CustomProperty(transport, new CustomType("transport","transport")));
+            String dispatchPolicy = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-specific/dispatch-policy", XPathConstants.STRING);
+            resource.addProperty(new CustomProperty(dispatchPolicy, new CustomType("dispatchPolicy","dispatchPolicy")));
+            String httpConnectionTimeout = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-specific/outbound-properties/connection-timeout", XPathConstants.STRING);
+            resource.addProperty(new CustomProperty(httpConnectionTimeout, new CustomType("httpConnectionTimeout","httpConnectionTimeout")));
+            String httpReadTimeout = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-specific/outbound-properties/timeout", XPathConstants.STRING);
+            resource.addProperty(new CustomProperty(httpReadTimeout, new CustomType("httpReadTimeout","httpReadTimeout")));
+            String chuncked = (String)xPathExecutor.execute(document, "/businessServiceEntry/endpointConfig/provider-specific/outbound-properties/chunked-streaming-mode", XPathConstants.STRING);
+            resource.addProperty(new CustomProperty(chuncked, new CustomType("chuncked","chuncked")));
+            Uri url = new Uri(uri, transport, resource.getType());
+            resource.setUri(url);
+            List<OWSMPolicy> policies = this.getPolicySet(document);
+        } catch (Exception e ){
+            logger.error(e.getMessage() +";"+filePath);
+            resource = null;
+        }
+        return resource;
     }
 }
