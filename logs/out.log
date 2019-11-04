@@ -1,0 +1,795 @@
+22:45:32: Executing task 'App.main()'...
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+
+> Task :App.main()
+2019-11-03 22:45:33,931 main DEBUG Apache Log4j Core 2.11.2 initializing configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml]
+2019-11-03 22:45:33,936 main DEBUG Installed 1 script engine
+2019-11-03 22:45:34,152 main DEBUG Oracle Nashorn version: 1.8.0_221, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2019-11-03 22:45:34,153 main DEBUG PluginManager 'Core' found 117 plugins
+2019-11-03 22:45:34,153 main DEBUG PluginManager 'Level' found 0 plugins
+2019-11-03 22:45:34,156 main DEBUG PluginManager 'Lookup' found 13 plugins
+2019-11-03 22:45:34,157 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-11-03 22:45:34,165 main DEBUG PluginManager 'TypeConverter' found 26 plugins
+2019-11-03 22:45:34,175 main DEBUG PatternLayout$Builder(pattern="%d|%m%n", PatternSelector=null, Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-11-03 22:45:34,176 main DEBUG PluginManager 'Converter' found 47 plugins
+2019-11-03 22:45:34,185 main DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2019-11-03 22:45:34,191 main DEBUG createPolicy(size="50MB")
+2019-11-03 22:45:34,192 main DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2019-11-03 22:45:34,193 main DEBUG createPolicy(={SizeBasedTriggeringPolicy(size=52428800)})
+2019-11-03 22:45:34,193 main DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2019-11-03 22:45:34,195 main DEBUG DefaultRolloverStrategy$Builder(max="1000", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml))
+2019-11-03 22:45:34,196 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2019-11-03 22:45:34,203 main DEBUG RollingRandomAccessFileAppender$Builder(fileName="logs/out.log", filePattern="logs/out-%d{yyyy-MM-dd}-%i.log", append="null", Policies(CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=52428800)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=1000, useMax=true)), advertise="null", advertiseURI="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d|%m%n), name="FileAppender", Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Filter=null, ={})
+2019-11-03 22:45:34,207 main DEBUG Starting RollingRandomAccessFileManager logs/out.log
+2019-11-03 22:45:34,211 main DEBUG PluginManager 'FileConverter' found 2 plugins
+2019-11-03 22:45:34,212 main DEBUG Setting prev file time to 2019-11-03T22:45:34.206-0300
+2019-11-03 22:45:34,213 main DEBUG Initializing triggering policy CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=52428800)])
+2019-11-03 22:45:34,213 main DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=52428800)
+2019-11-03 22:45:34,214 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2019-11-03 22:45:34,214 main DEBUG createAppenders(={FileAppender})
+2019-11-03 22:45:34,215 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-11-03 22:45:34,215 main DEBUG createAppenderRef(ref="FileAppender", level="null", Filter=null)
+2019-11-03 22:45:34,215 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-11-03 22:45:34,217 main DEBUG createLogger(additivity="false", level="TRACE", name="cl.entel.tde.soa.integration.domain", includeLocation="null", ={FileAppender}, ={}, Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Filter=null)
+2019-11-03 22:45:34,219 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2019-11-03 22:45:34,220 main DEBUG createLoggers(={cl.entel.tde.soa.integration.domain})
+2019-11-03 22:45:34,220 main WARN No Root logger was configured, creating default ERROR-level Root logger with Console appender
+2019-11-03 22:45:34,221 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false-2
+2019-11-03 22:45:34,222 main DEBUG Configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml] initialized
+2019-11-03 22:45:34,222 main DEBUG Starting configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml]
+2019-11-03 22:45:34,222 main DEBUG Started configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml] OK.
+2019-11-03 22:45:34,223 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2019-11-03 22:45:34,223 main DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2019-11-03 22:45:34,223 main DEBUG Appender DefaultConsole-1 stopped with status true
+2019-11-03 22:45:34,223 main DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@2a33fae0 OK
+2019-11-03 22:45:34,255 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93
+2019-11-03 22:45:34,257 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=StatusLogger
+2019-11-03 22:45:34,258 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=ContextSelector
+2019-11-03 22:45:34,259 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Loggers,name=cl.entel.tde.soa.integration.domain
+2019-11-03 22:45:34,260 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Appenders,name=FileAppender
+2019-11-03 22:45:34,260 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Appenders,name=DefaultConsole-2
+2019-11-03 22:45:34,261 main DEBUG org.apache.logging.log4j.core.util.SystemClock does not support precise timestamps.
+2019-11-03 22:45:34,262 main DEBUG Reconfiguration complete for context[name=73d16e93] at URI D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml (org.apache.logging.log4j.core.LoggerContext@ae13544) with optional ClassLoader: null
+2019-11-03 22:45:34,262 main DEBUG Shutdown hook enabled. Registering a new one.
+2019-11-03 22:45:34,263 main DEBUG LoggerContext[name=73d16e93, org.apache.logging.log4j.core.LoggerContext@ae13544] started OK.
+2019-11-03 22:45:34,469 main DEBUG Reconfiguration started for context[name=73d16e93] at URI null (org.apache.logging.log4j.core.LoggerContext@ae13544) with optional ClassLoader: null
+2019-11-03 22:45:34,469 main DEBUG Using configurationFactory org.apache.logging.log4j.core.config.ConfigurationFactory$Factory@6f8e8894
+2019-11-03 22:45:34,473 main DEBUG Not in a ServletContext environment, thus not loading WebLookup plugin.
+2019-11-03 22:45:34,473 main DEBUG Closing BufferedInputStream java.io.BufferedInputStream@3cfdd820
+2019-11-03 22:45:34,476 main DEBUG Apache Log4j Core 2.11.2 initializing configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml]
+2019-11-03 22:45:34,477 main DEBUG Installed 1 script engine
+2019-11-03 22:45:34,485 main DEBUG Oracle Nashorn version: 1.8.0_221, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2019-11-03 22:45:34,485 main DEBUG PluginManager 'Core' found 117 plugins
+2019-11-03 22:45:34,485 main DEBUG PluginManager 'Level' found 0 plugins
+2019-11-03 22:45:34,486 main DEBUG PluginManager 'Lookup' found 13 plugins
+2019-11-03 22:45:34,486 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-11-03 22:45:34,486 main DEBUG PatternLayout$Builder(pattern="%d|%m%n", PatternSelector=null, Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-11-03 22:45:34,487 main DEBUG PluginManager 'Converter' found 47 plugins
+2019-11-03 22:45:34,487 main DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2019-11-03 22:45:34,488 main DEBUG createPolicy(size="50MB")
+2019-11-03 22:45:34,488 main DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2019-11-03 22:45:34,488 main DEBUG createPolicy(={SizeBasedTriggeringPolicy(size=52428800)})
+2019-11-03 22:45:34,489 main DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2019-11-03 22:45:34,489 main DEBUG DefaultRolloverStrategy$Builder(max="1000", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml))
+2019-11-03 22:45:34,489 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2019-11-03 22:45:34,490 main DEBUG RollingRandomAccessFileAppender$Builder(fileName="logs/out.log", filePattern="logs/out-%d{yyyy-MM-dd}-%i.log", append="null", Policies(CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=52428800)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=1000, useMax=true)), advertise="null", advertiseURI="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d|%m%n), name="FileAppender", Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Filter=null, ={})
+2019-11-03 22:45:34,490 main DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=52428800)
+2019-11-03 22:45:34,490 main DEBUG PluginManager 'FileConverter' found 2 plugins
+2019-11-03 22:45:34,490 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2019-11-03 22:45:34,490 main DEBUG createAppenders(={FileAppender})
+2019-11-03 22:45:34,491 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-11-03 22:45:34,491 main DEBUG createAppenderRef(ref="FileAppender", level="null", Filter=null)
+2019-11-03 22:45:34,491 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-11-03 22:45:34,492 main DEBUG createLogger(additivity="false", level="TRACE", name="cl.entel.tde.soa.integration.domain", includeLocation="null", ={FileAppender}, ={}, Configuration(D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml), Filter=null)
+2019-11-03 22:45:34,492 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2019-11-03 22:45:34,492 main DEBUG createLoggers(={cl.entel.tde.soa.integration.domain})
+2019-11-03 22:45:34,492 main WARN No Root logger was configured, creating default ERROR-level Root logger with Console appender
+2019-11-03 22:45:34,493 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false-3
+2019-11-03 22:45:34,493 main DEBUG Configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml] initialized
+2019-11-03 22:45:34,493 main DEBUG Starting configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml]
+2019-11-03 22:45:34,493 main DEBUG Started configuration XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml] OK.
+2019-11-03 22:45:34,494 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-2
+2019-11-03 22:45:34,494 main DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-2, all resources released: true
+2019-11-03 22:45:34,494 main DEBUG Appender DefaultConsole-2 stopped with status true
+2019-11-03 22:45:34,494 main DEBUG Appender FileAppender stopped with status true
+2019-11-03 22:45:34,494 main DEBUG Stopped XmlConfiguration[location=D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml] OK
+2019-11-03 22:45:34,495 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93
+2019-11-03 22:45:34,496 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=StatusLogger
+2019-11-03 22:45:34,496 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=ContextSelector
+2019-11-03 22:45:34,496 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Loggers,name=cl.entel.tde.soa.integration.domain
+2019-11-03 22:45:34,496 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Appenders,name=FileAppender
+2019-11-03 22:45:34,496 main DEBUG Registering MBean org.apache.logging.log4j2:type=73d16e93,component=Appenders,name=DefaultConsole-3
+2019-11-03 22:45:34,497 main DEBUG Reconfiguration complete for context[name=73d16e93] at URI D:\Projects\Repository\branch-information\build\resources\main\log4j2.xml (org.apache.logging.log4j.core.LoggerContext@ae13544) with optional ClassLoader: null
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+refs/remotes/origin/GS-1000-PublishProductOrder-v1
+refs/remotes/origin/GS-1001-GetCountingDetail-v1
+refs/remotes/origin/GS-1002-GetStoreStockInventory-v1
+refs/remotes/origin/GS-1003-CreateReceptionTransfer-v1
+refs/remotes/origin/GS-1004-GetMovementPhysicalResource-v1
+refs/remotes/origin/GS-1006-GetDeviceLease-v1
+refs/remotes/origin/GS-1007-ValidateInventoryIMEI-v1
+refs/remotes/origin/GS-1008-UpdateWorkOrderReschedule-v1
+refs/remotes/origin/GS-1009-OFSCCORP-v1
+22:46:39.418 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_OFSCCORP_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_OFSCCORP_v1|refs/remotes/origin/GS-1009-OFSCCORP-v1
+refs/remotes/origin/GS-1010-GetPhysicalResourceOwner-v1
+refs/remotes/origin/GS-1011-GetMSISDNTypeCoexist-v1
+refs/remotes/origin/GS-1012-CreateLoyaltyBurn-v2
+refs/remotes/origin/GS-1013-UpdateWorkOrderLegacy-v1
+refs/remotes/origin/GS-1014-PublishDeliveryOrder-v1
+refs/remotes/origin/GS-1015-UpdateTroubleTicketStatusOrder-v1
+refs/remotes/origin/GS-1016-CreateOTPToken-v1
+refs/remotes/origin/GS-1017-ValidateOTPToken-v1
+refs/remotes/origin/GS-1019-CreateOneClickToOrder-v2
+refs/remotes/origin/GS-1021-UpdateServiceRequest-v1
+refs/remotes/origin/GS-1023-CreateServiceRequest-v1
+refs/remotes/origin/GS-1027-GetTroubleTicketTechnicalOrderCoexist-v1
+refs/remotes/origin/GS-1028-CreateLoyaltyReturn-v2
+refs/remotes/origin/GS-1029-GetDocumentBillDetails-v1
+refs/remotes/origin/GS-1030-CreateStore-v1
+refs/remotes/origin/GS-1032-GetPartyIdentificationQuiz-v2
+refs/remotes/origin/GS-1033-GetTransactionCarrierBilling-v2
+22:48:56.771 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_GetTransactionCarrierBilling_v2\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_GetTransactionCarrierBilling_v2|refs/remotes/origin/GS-1033-GetTransactionCarrierBilling-v2
+refs/remotes/origin/GS-1034-UpdateOTPToken-v1
+refs/remotes/origin/GS-1035-DeleteUser-v1
+refs/remotes/origin/GS-1036-GetActivities-v1
+refs/remotes/origin/GS-116-UpdateActivity-v1
+refs/remotes/origin/GS-117-GetPartyIdentification-v1
+refs/remotes/origin/GS-123-GetServiceRequest-v1
+refs/remotes/origin/GS-124-GetLocation-v1
+refs/remotes/origin/GS-129-CreateCustomerAccount-v1
+refs/remotes/origin/GS-135-Framework
+22:50:46.951 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - 3|refs/remotes/origin/GS-135-Framework
+refs/remotes/origin/GS-140-GetLoyaltyBalance-v1
+refs/remotes/origin/GS-141-GetProductOffering-v1
+refs/remotes/origin/GS-144-SubmitProductOrder-v1
+refs/remotes/origin/GS-145-CreateProductOrderItem-v1
+refs/remotes/origin/GS-147-UpdateProductOrderItem-v1
+refs/remotes/origin/GS-152-GetFrequentNumber-v1
+refs/remotes/origin/GS-153-GetAvailableMSISDN-v1
+refs/remotes/origin/GS-154-ValidateCustomerBlackList-v1
+refs/remotes/origin/GS-156-UpdateCustomerAccountContact-v1
+refs/remotes/origin/GS-157-GetProductOrder-v1
+refs/remotes/origin/GS-160-CreateOneClickToOrder-v1
+refs/remotes/origin/GS-161-CheckoutProductOrder-v1
+refs/remotes/origin/GS-162-CreateServiceRequestActivity-v1
+refs/remotes/origin/GS-163-ValidatePortabilityOrder-v1
+refs/remotes/origin/GS-164-GetCustomerOrderToken-v1
+refs/remotes/origin/GS-166-AuthenticatePortabilityOrder-v1
+refs/remotes/origin/GS-169-PublishPortabilityOrder-v1
+refs/remotes/origin/GS-172-PublishPortabilityInformation-v1
+refs/remotes/origin/GS-173-CancelDeliveryOrder-v1
+refs/remotes/origin/GS-174-CreateLoyaltyBurn-v1
+refs/remotes/origin/GS-176-CreateDeliverySlot-v1
+refs/remotes/origin/GS-177-UpdatePortabilityOrder-v1
+refs/remotes/origin/GS-178-CreateDeliveryOrder-v1
+refs/remotes/origin/GS-179-CancelDeliverySlot-v1
+refs/remotes/origin/GS-180-UpdateDeliveryOrder-v1
+refs/remotes/origin/GS-181-CancelPaymentOrder-v1
+refs/remotes/origin/GS-184-CreatePartner-v1
+refs/remotes/origin/GS-185-DeleteUser-v1
+refs/remotes/origin/GS-186-GetMSISDN-v1
+refs/remotes/origin/GS-187-CreateStore-v1
+refs/remotes/origin/GS-188-CreateRequestCustomerBill-v1
+refs/remotes/origin/GS-189-GetUsageDetails-v1
+refs/remotes/origin/GS-191-CancelPartyLogicalResource-v1
+refs/remotes/origin/GS-192-CancelLoyaltyBurn-v1
+refs/remotes/origin/GS-193-CreateMarketingCampaignContact-v1
+refs/remotes/origin/GS-194-CreatePayment-v1
+refs/remotes/origin/GS-195-CreateLoyaltyVoucher-v1
+refs/remotes/origin/GS-197-ValidatePhysicalResource-v1
+refs/remotes/origin/GS-198-DeleteStore-v1
+refs/remotes/origin/GS-199-PublishPaymentOrder-v1
+refs/remotes/origin/GS-200-UpdateCustomerAccountBalance-v1
+refs/remotes/origin/GS-201-PublishProductOffering-v1
+refs/remotes/origin/GS-203-GetUser-v1
+refs/remotes/origin/GS-204-UpdateStore-v1
+refs/remotes/origin/GS-205-GetUsageThresholdsCounter-v1
+refs/remotes/origin/GS-206-DeleteProductOrder-v1
+refs/remotes/origin/GS-208-PublishPaymentNotification-v1
+refs/remotes/origin/GS-209-GetCustomerAccountAsset-v1
+refs/remotes/origin/GS-210-GetAssetProductOffer-v1
+refs/remotes/origin/GS-211-ValidateProductOrderPrice-v1
+refs/remotes/origin/GS-212-FRW-TEMPLATE_20
+22:57:10.178 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_FRW_TEMPLATE_20\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_FRW_TEMPLATE_20|refs/remotes/origin/GS-212-FRW-TEMPLATE_20
+refs/remotes/origin/GS-216-GetPayment-v1
+refs/remotes/origin/GS-217-PublishPhysicalResourceNotification-v1
+refs/remotes/origin/GS-219-UpdateUser-v1
+refs/remotes/origin/GS-221-UpdateCustomerPartyLogicalResourceSpec-v1
+refs/remotes/origin/GS-222-ValidateResourceBlackList-v1
+refs/remotes/origin/GS-223-UpdateDocument-v1
+refs/remotes/origin/GS-227-PublishUsageNotification-v1
+refs/remotes/origin/GS-228-UpdateTroubleTicket-v1
+refs/remotes/origin/GS-229-GetServicesContract-v1
+refs/remotes/origin/GS-230-GetPartyLogicalResource-v1
+refs/remotes/origin/GS-231-GetDocumentList-v1
+refs/remotes/origin/GS-236-GetTroubleTicketDetails-v1
+refs/remotes/origin/GS-237-GetLoyaltyBalanceDetail-v1
+refs/remotes/origin/GS-238-ValidatePartyDebit-v1
+refs/remotes/origin/GS-239-DeleteProductOrderItem-v1
+refs/remotes/origin/GS-240-UpdateRegulatoryClaim-v1
+refs/remotes/origin/GS-241-GetLoyaltyProduct-v1
+refs/remotes/origin/GS-245-CreateUserCoexist-v1
+22:59:33.639 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreateUserCoexist_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreateUserCoexist_v1|refs/remotes/origin/GS-245-CreateUserCoexist-v1
+refs/remotes/origin/GS-246-GetLogicalPhysicalResourceSpec-v1
+refs/remotes/origin/GS-247-GetCustomerPartyLogicalResourceSpec-v1
+refs/remotes/origin/GS-257-ValidateLoyaltyBurn-v1
+refs/remotes/origin/GS-258-GetMarketingCampaign-v1
+refs/remotes/origin/GS-260-UpdatePartner-v1
+refs/remotes/origin/GS-261-DeletePartner-v1
+refs/remotes/origin/GS-263-LoginSignature-v1
+refs/remotes/origin/GS-264-FRW-TEMPLATE
+23:00:36.884 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_FRW_TEMPLATE\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_FRW_TEMPLATE|refs/remotes/origin/GS-264-FRW-TEMPLATE
+refs/remotes/origin/GS-265-CreateSignature-v1
+refs/remotes/origin/GS-266-GetNetworkAvailability-v1
+refs/remotes/origin/GS-270-CancelContract-v1
+refs/remotes/origin/GS-271-GetCustomerLogicalResource-v1
+refs/remotes/origin/GS-272-CreateClaimRequest-v1
+refs/remotes/origin/GS-274-CancelProductOrder-v1
+refs/remotes/origin/GS-275-GetThresholdsCounters-v1
+refs/remotes/origin/GS-276-GetRealTimeMarketingCampaign-v1
+refs/remotes/origin/GS-277-GetCustomerProblem-v1
+refs/remotes/origin/GS-278-UpdateMigrationInfo-v1
+refs/remotes/origin/GS-279-CreateMigrationInfo-v1
+refs/remotes/origin/GS-280-GetMigrationInfo-v1
+refs/remotes/origin/GS-281-CreateMarketingCampaign-v1
+refs/remotes/origin/GS-282-GetNetworkAvailabilityDetail-v1
+refs/remotes/origin/GS-284-ValidatePaymentMethod-v1
+refs/remotes/origin/GS-285-CancelCustomerBill-v1
+refs/remotes/origin/GS-286-GetCustomerFacingService-v1
+refs/remotes/origin/GS-287-PublishCustomerBill-v1
+refs/remotes/origin/GS-288-UpdateMarketingCampaign-v1
+refs/remotes/origin/GS-289-ValidatePartyAccount-v1
+refs/remotes/origin/GS-290-GetPartyLogicalResourceUsage-v1
+refs/remotes/origin/GS-291-CreateRequestProductOrder-v1
+refs/remotes/origin/GS-292-UpdateDocumentReadData-v1
+refs/remotes/origin/GS-293-CreatePhysicalResourceTransfer-v1
+23:03:43.536 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreatePhysicalResourceTransfer_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreatePhysicalResourceTransfer_v1|refs/remotes/origin/GS-293-CreatePhysicalResourceTransfer-v1
+refs/remotes/origin/GS-295-PublishDeliveryOrder-v1
+refs/remotes/origin/GS-296-CreateTransferCredit-v1
+refs/remotes/origin/GS-298-MapeosCanonicos
+23:04:13.200 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - 3|refs/remotes/origin/GS-298-MapeosCanonicos
+refs/remotes/origin/GS-299-GetBillingAccountCoexist-v1
+refs/remotes/origin/GS-300-GetStreet-v1
+refs/remotes/origin/GS-301-GetStreetNumber-v1
+refs/remotes/origin/GS-302-ReserveAvailableMSISDN-v1
+refs/remotes/origin/GS-303-PublishTroubleTicket-v1
+refs/remotes/origin/GS-306-CancelPortabilityOrder-v1
+refs/remotes/origin/GS-308-CreateRequestPortabilityOrder-v1
+refs/remotes/origin/GS-309-UpdateActivitiesList-v1
+refs/remotes/origin/GS-310-GetNotification-v1
+refs/remotes/origin/GS-311-CreateActivitiesList-v1
+refs/remotes/origin/GS-313-UpdateCustomerAccountReceivable-v1
+refs/remotes/origin/GS-314-CreateNotification-v1
+refs/remotes/origin/GS-315-UpdateCustomerBillAccount-v1
+refs/remotes/origin/GS-317-GetCustomerBillingDemand-v1
+refs/remotes/origin/GS-319-GetCustomerCountUsageDetails-v1
+refs/remotes/origin/GS-321-GetStoreLocation-v1
+refs/remotes/origin/GS-322-CreateAppliedCustomerBillingCharge-v1
+refs/remotes/origin/GS-324-GetAffinity-v1
+refs/remotes/origin/GS-325-CallbackGategay-v1
+23:07:16.794 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CallbackGategay_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CallbackGategay_v1|refs/remotes/origin/GS-325-CallbackGategay-v1
+refs/remotes/origin/GS-326-GetUserCoexist-v1
+refs/remotes/origin/GS-329-ReleasePhysicalResource-v1
+refs/remotes/origin/GS-330-SubmitDeviceTransfer-v1
+refs/remotes/origin/GS-331-GetCustomerPhysicalDeviceHistory-v1
+refs/remotes/origin/GS-332-CreateAppliedCustomerBillingCredit-v1
+refs/remotes/origin/GS-333-UpdatePhysicalResourceAvailability-v1
+refs/remotes/origin/GS-335-GetCustomerBillingCredit-v1
+refs/remotes/origin/GS-336-GetCustomerBillingCycle-v1
+refs/remotes/origin/GS-337-GetListOfAmounts-v1
+refs/remotes/origin/GS-338-CancelAppliedCustomerBillingCreditRequest-v1
+refs/remotes/origin/GS-339-PublishActivationRequest-v1
+refs/remotes/origin/GS-340-TokenProductOrder-v1
+refs/remotes/origin/GS-341-CreateCustomerAccountFinancing-v1
+refs/remotes/origin/GS-342-UpdatePhysicalResource-v1
+refs/remotes/origin/GS-343-GetCustomerBillingDocument-v1
+refs/remotes/origin/GS-345-UpdateContract-v1
+refs/remotes/origin/GS-346-CreateContract-v1
+refs/remotes/origin/GS-347-UpdatePartnerPartyAccount-v1
+refs/remotes/origin/GS-348-CreatePartnerPartyAccount-v1
+refs/remotes/origin/GS-349-CreateCustomerAuthenticationKey-v1
+refs/remotes/origin/GS-350-CreateWorkOrderScheduleCorp-v1
+refs/remotes/origin/GS-352-GetWorkOrderScheduleCorp-v1
+refs/remotes/origin/GS-353-UpdateWorkOrderScheduleCorp-v1
+refs/remotes/origin/GS-356-CancelWorkOrderScheduleCorp-v1
+refs/remotes/origin/GS-357-SendMessageCorpCompleteSucsessfully-v1
+refs/remotes/origin/GS-358-UpdateDocumentMetaDataList-v1
+refs/remotes/origin/GS-359-SendMessageCorpStartActivity-v1
+refs/remotes/origin/GS-360-SendMessageCorpNofityTravel-v1
+23:10:15.237 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_SendMessageCorpNofityTravel_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_SendMessageCorpNofityTravel_v1|refs/remotes/origin/GS-360-SendMessageCorpNofityTravel-v1
+refs/remotes/origin/GS-361-CreateEntityProject-v1
+refs/remotes/origin/GS-363-SendMessageCorpNotDone-v1
+refs/remotes/origin/GS-364-GetEntityProject-v1
+refs/remotes/origin/GS-365-GetAssetEntityProject-v1
+refs/remotes/origin/GS-366-CreateDesktopOrder-v1
+refs/remotes/origin/GS-367-PublishDesktopOrder-v1
+refs/remotes/origin/GS-368-CancelDesktopOrder-v1
+refs/remotes/origin/GS-369-NotificationDesktopOrderStatus-v1
+refs/remotes/origin/GS-370-PublishUserProfile-v1
+refs/remotes/origin/GS-371-SendMessageCorpRequestProgress-v1
+refs/remotes/origin/GS-372-GetPartyLogicalResourceFamily-v1
+refs/remotes/origin/GS-373-CreateFraudCaseRequest-v1
+refs/remotes/origin/GS-374-GetCustomerInformation-v1
+refs/remotes/origin/GS-375-UpdateAvailableICCID-v1
+refs/remotes/origin/GS-376-SendMessageCorpSuspendActivity-v1
+23:11:36.413 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_SendMessageCorpSuspendActivity_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_SendMessageCorpSuspendActivity_v1|refs/remotes/origin/GS-376-SendMessageCorpSuspendActivity-v1
+refs/remotes/origin/GS-378-CreateLoyaltyReturn-v1
+refs/remotes/origin/GS-380-OFSCCORP-v1
+23:11:50.155 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_OFSCCORP_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_OFSCCORP_v1|refs/remotes/origin/GS-380-OFSCCORP-v1
+refs/remotes/origin/GS-383-UpdateLoyaltyAccount-v1
+refs/remotes/origin/GS-384-CreateCustomerInfo-v1
+refs/remotes/origin/GS-385-UpdateCustomerInfo-v1
+refs/remotes/origin/GS-386-UpdateCustomerBillAccountTaxes-v1
+refs/remotes/origin/GS-393-GetTroubleTicketDetails-v1
+refs/remotes/origin/GS-394-CreateTroubleTicket-v1
+refs/remotes/origin/GS-395-ValidateCustomerBlackListReason-v1
+refs/remotes/origin/GS-397-CreateNotificationFolioCustomerBill-v1
+refs/remotes/origin/GS-399-GetPartnerPartyAccount-v1
+refs/remotes/origin/GS-402-GetCreditAvailable-v1
+refs/remotes/origin/GS-404-CreateTransactionCarrierBilling-v1
+refs/remotes/origin/GS-405-CreateEnrollment-v1
+refs/remotes/origin/GS-406-GetProductBlackList-v1
+refs/remotes/origin/GS-407-GetOTTEnrollment-v1
+refs/remotes/origin/GS-408-GetCreditLimit-v1
+refs/remotes/origin/GS-409-GetAssetRoaming-v1
+refs/remotes/origin/GS-410-UpdateCustomerGrayList-v1
+refs/remotes/origin/GS-411-CreateCustomerGrayList-v1
+refs/remotes/origin/GS-412-GetUsageDetailUnbilled-v1
+refs/remotes/origin/GS-413-GetUsageDetailBilling-v1
+refs/remotes/origin/GS-414-GetCustomerGrayList-v1
+refs/remotes/origin/GS-415-GetTransactionCarrierBilling-v1
+refs/remotes/origin/GS-416-GetRoamingStatus-v1
+refs/remotes/origin/GS-417-CreateBusinessClaimRequest-v1
+refs/remotes/origin/GS-418-UpdateCreditUsed-v1
+refs/remotes/origin/GS-419-UpdateTransactionCarrierBilling-v1
+refs/remotes/origin/GS-423-ValidateEnrollment-v1
+refs/remotes/origin/GS-427-CreateServiceOrder-v1
+refs/remotes/origin/GS-430-GetBusinessClaimRequest-v1
+refs/remotes/origin/GS-433-ValidateBlockedOtt-v1
+refs/remotes/origin/GS-434-GetWorkOrderCorp-v1
+refs/remotes/origin/GS-435-CreateDocumentListSign-v1
+refs/remotes/origin/GS-436-UpdateTroubleTicketCoexist-v1
+refs/remotes/origin/GS-439-CreateCustomerAccountRequest-v1
+refs/remotes/origin/GS-440-CreateChangeImeiEvent-v1
+refs/remotes/origin/GS-441-GetEventVASHistory-v1
+refs/remotes/origin/GS-442-UpdateBuyBackInformation-v1
+refs/remotes/origin/GS-443-GetTechnicalServiceChangeCoexist-v1
+refs/remotes/origin/GS-444-GetTechnicalServiceCoexist-v1
+refs/remotes/origin/GS-445-GetTechnicalServiceListCoexist-v1
+refs/remotes/origin/GS-447-GetUserProfile-v1
+refs/remotes/origin/GS-452-GetDocumentsListStatus-v1
+refs/remotes/origin/GS-453-CreateDocumentReintent-v1
+refs/remotes/origin/GS-454-CreateDocumentList-v1
+refs/remotes/origin/GS-456-GetRecordingURL-v1
+refs/remotes/origin/GS-457-PublishPortabilityInformation-v1
+refs/remotes/origin/GS-469-IEGetCustomerInfo-v1
+23:16:49.741 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_IEGetCustomerInfo_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_IEGetCustomerInfo_v1|refs/remotes/origin/GS-469-IEGetCustomerInfo-v1
+refs/remotes/origin/GS-470-CancelCustomerStoreCredit-v1
+refs/remotes/origin/GS-474-ValidateBillingCreditDebitNote-v1
+refs/remotes/origin/GS-475-UpdateServiceRequestCredit-v1
+refs/remotes/origin/GS-476-GetServiceRequestCredit-v1
+refs/remotes/origin/GS-479-GetBuyBackInformation-v1
+refs/remotes/origin/GS-480-CreateBuyBackInformation-v1
+refs/remotes/origin/GS-481-GetCreditUsed-v1
+refs/remotes/origin/GS-484-GetAppliedBillingDocumentDetails-v1
+refs/remotes/origin/GS-485-GetDocumentBillDetails-v1
+refs/remotes/origin/GS-486-GetAppliedBillingDocument-v1
+refs/remotes/origin/GS-487-GetPartnerCreditLimit-v1
+refs/remotes/origin/GS-488-UpdateCustomerAccountAsset-v1
+refs/remotes/origin/GS-489-GetRequestPayment-v1
+refs/remotes/origin/GS-490-CreateInsuranceEvent-v1
+refs/remotes/origin/GS-491-GetInsuranceEvent-v1
+refs/remotes/origin/GS-493-UpdateRequestPayment-v1
+refs/remotes/origin/GS-496-CreateProductOrder-v1
+refs/remotes/origin/GS-499-GetAbsoluteLocation-v1
+refs/remotes/origin/GS-501-GetCountDocumentList-v1
+23:18:44.298 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_GetCountDocumentList_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_GetCountDocumentList_v1|refs/remotes/origin/GS-501-GetCountDocumentList-v1
+refs/remotes/origin/GS-502-UpdateOrderStatus-v1
+refs/remotes/origin/GS-503-ValidateCheckList-v1
+refs/remotes/origin/GS-507-AdjustStockInventory-v1
+refs/remotes/origin/GS-509-GetMovementPhysicalResource-v1
+23:19:04.382 [main] ERROR cl.entel.tde.soa.integration.service.ServiceService - Exception sending message; nested exception is com.mongodb.MongoSocketWriteException: Exception sending message;GetMovementPhysicalResource
+refs/remotes/origin/GS-510-CreateStockInventoryTransferRequest-v1
+23:19:40.097 [main] ERROR cl.entel.tde.soa.integration.service.ServiceService - Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.49.4.234:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.49.4.234:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}];CreateStockInventoryTransferRequest
+refs/remotes/origin/GS-511-CancelStockInventoryTransferRequest-v1
+refs/remotes/origin/GS-512-CreateOutgoingTransferRequest-v1
+refs/remotes/origin/GS-513-GetReserveList-v1
+refs/remotes/origin/GS-514-CreateHistoryTroubleOtt-v1
+refs/remotes/origin/GS-515-CreateReceptionTransfer-v1
+refs/remotes/origin/GS-517-UpdateOTTEnrollment-v1
+refs/remotes/origin/GS-518-PublishCustomerBillingDemand-v1
+refs/remotes/origin/GS-519-ValidateTechnicalService-v1
+refs/remotes/origin/GS-521-GetCustomerBillingDocumentDistribution-v1
+refs/remotes/origin/GS-522-ValidateCreditPayment-v1
+refs/remotes/origin/GS-523-CreateLoyaltyEarnBilling-v1
+refs/remotes/origin/GS-524-GetMovementType-v1
+refs/remotes/origin/GS-525-GetMovStockInventory-v1
+refs/remotes/origin/GS-526-GetStoreList-v1
+refs/remotes/origin/GS-527-GetStoreStockInventory-v1
+refs/remotes/origin/GS-528-ReserveStoreStockInventory-v1
+refs/remotes/origin/GS-529-GetTransferList-v1
+refs/remotes/origin/GS-530-GetTransferDetail-v1
+refs/remotes/origin/GS-533-ValidateRequestProductOrder-v1
+refs/remotes/origin/GS-539-GetDeviceLease-v1
+refs/remotes/origin/GS-545-GetServicesContract-v1
+refs/remotes/origin/GS-549-GetBillingAccountCoexist-v2
+refs/remotes/origin/GS-552-Retail-v1
+23:22:09.128 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_Retail_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_Retail_v1|refs/remotes/origin/GS-552-Retail-v1
+refs/remotes/origin/GS-555-PublishReturnOrder-v1
+refs/remotes/origin/GS-557-GetCustomerAccountBalance-v1
+refs/remotes/origin/GS-559-GetSalesList-v1
+refs/remotes/origin/GS-563-CreateRequestPayment-v1
+refs/remotes/origin/GS-564-CreateRequestPaymentLoyaltyBurn-v1
+refs/remotes/origin/GS-565-GetJustificationType-v1
+refs/remotes/origin/GS-566-UpdateStatusJustification-v1
+refs/remotes/origin/GS-568-CreateCountingStore-v1
+refs/remotes/origin/GS-569-GetCountingList-v1
+refs/remotes/origin/GS-572-CreateActivity-v1
+refs/remotes/origin/GS-573-GetCountingDetail-v1
+refs/remotes/origin/GS-574-GetBillingConcept-v1
+refs/remotes/origin/GS-575-CreateBillingConcept-v1
+refs/remotes/origin/GS-576-DeleteBillingConcept-v1
+refs/remotes/origin/GS-577-UpdateBillingConcept-v1
+refs/remotes/origin/GS-578-GetDocumentBill-v1
+refs/remotes/origin/GS-580-GetMessageList-v1
+refs/remotes/origin/GS-581-OFSC-v1
+23:24:13.761 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_OFSC_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_OFSC_v1|refs/remotes/origin/GS-581-OFSC-v1
+refs/remotes/origin/GS-582-GetActivities-v1
+refs/remotes/origin/GS-584-GetAsset-v1
+refs/remotes/origin/GS-586-UpdateBusinessClaimRequest-v1
+refs/remotes/origin/GS-587-CreatePortabilityOrder-v1
+refs/remotes/origin/GS-588-GetLoyaltyAccount-v1
+refs/remotes/origin/GS-589-CreateCustomerAccountReceivable-v1
+refs/remotes/origin/GS-590-GetCustomerPaymentBalance-v1
+refs/remotes/origin/GS-593-ValidateCustomerCreditProfile-v1
+refs/remotes/origin/GS-596-CreateAppliedCustomerBillingAdjustment-v1
+refs/remotes/origin/GS-597-CreateChangeImeiEvent-v1
+refs/remotes/origin/GS-606-UpdateProductOrder-v1
+refs/remotes/origin/GS-607-CancelStoreCredit-v1
+refs/remotes/origin/GS-608-GetCustomerStoreCredit-v1
+refs/remotes/origin/GS-609-ValidateCustomerPortabilityOrder-v1
+refs/remotes/origin/GS-611-CUSTOMER.CustomerAccount.IS.createNotification-v1
+refs/remotes/origin/GS-615-GetCustomerPhysicalDevice-v1
+refs/remotes/origin/GS-628-UpdateCustomerAccountAsset-v1
+refs/remotes/origin/GS-630-ValidateCheckList-v1
+refs/remotes/origin/GS-631-CreateCustomerBillingDemand-v1
+refs/remotes/origin/GS-640-GetCustomerAccountBalanceAndCharge-v1
+refs/remotes/origin/GS-642-CreatePaymentOrder-v1
+refs/remotes/origin/GS-643-CreateFolioCustomerBill-v1
+refs/remotes/origin/GS-644-GetUserStore-v1
+refs/remotes/origin/GS-645-UnreservePhysicalResource-v1
+refs/remotes/origin/GS-646-GetCustomerAuthenticationKey-v1
+refs/remotes/origin/GS-647-DeleteFolioCustomerBill-v1
+refs/remotes/origin/GS-648-GetProductOrder-v1
+refs/remotes/origin/GS-649-GetCheckList-v1
+refs/remotes/origin/GS-650-GetPhysicalResourceOwner-v1
+refs/remotes/origin/GS-651-GetInternalControl-v1
+refs/remotes/origin/GS-652-GetInventoryMovement-v1
+refs/remotes/origin/GS-653-CreateInternalControl-v1
+refs/remotes/origin/GS-654-DeleteCounting-v1
+refs/remotes/origin/GS-656-CreatePruebaServicio-V1
+
+23:37:33.588 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreatePruebaServicio_V1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreatePruebaServicio_V1|refs/remotes/origin/GS-656-CreatePruebaServicio-V1
+refs/remotes/origin/GS-656-UpdateCustomerOperation-v1
+23:39:14.092 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_UpdateCustomerOperation_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_UpdateCustomerOperation_v1|refs/remotes/origin/GS-656-UpdateCustomerOperation-v1
+refs/remotes/origin/GS-658-UpdateCustomerOperation-v1
+23:39:14.162 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_UpdateCustomerOperation_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_UpdateCustomerOperation_v1|refs/remotes/origin/GS-658-UpdateCustomerOperation-v1
+refs/remotes/origin/GS-659-GetCustomerCommercialInformation-v1
+refs/remotes/origin/GS-660-GetServiceCodeCoexist-v1
+refs/remotes/origin/GS-661-GetContract-v1
+refs/remotes/origin/GS-662-GetPhysicalDeviceAvailability-v1
+refs/remotes/origin/GS-664-GetCustomerInfo-v1
+refs/remotes/origin/GS-665-GetStore-v1
+refs/remotes/origin/GS-666-GetAvailableProductOffer-v1
+refs/remotes/origin/GS-669-CreateReturnOrder-v1
+refs/remotes/origin/GS-670-GetAppliedCustomerBillingCharge-v1
+refs/remotes/origin/GS-671-GetCarrierList-v1
+refs/remotes/origin/GS-672-UpdateLoyaltyAccount-v1
+refs/remotes/origin/GS-674-GetPaymentOrder-v1
+refs/remotes/origin/GS-676-CreateMarketingCampaignContact-v2
+refs/remotes/origin/GS-677-GetAccountMemberList-v1
+refs/remotes/origin/GS-678-UpsertFinancingInfo-v1
+refs/remotes/origin/GS-679-UpdateLogicalResourceStatus-v1
+23:41:10.147 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_UpdateLogicalResourceStatus_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_UpdateLogicalResourceStatus_v1|refs/remotes/origin/GS-679-UpdateLogicalResourceStatus-v1
+refs/remotes/origin/GS-680-CreateCustomerAccountBalanceLegacy-v1
+refs/remotes/origin/GS-681-CreateLoyaltyEarn-v1
+refs/remotes/origin/GS-682-CreateBillingCreditDebitNote-v1
+refs/remotes/origin/GS-683-CreateOneClickToOrder-v2
+refs/remotes/origin/GS-685-GetCustomerAccount-v1
+refs/remotes/origin/GS-686-GetPartyIdentification-v2
+refs/remotes/origin/GS-687-CreateUser-v1
+refs/remotes/origin/GS-688-CreateCustomerBill-v1
+refs/remotes/origin/GS-689-GetAppliedCustomerBillingCharge-v1
+refs/remotes/origin/GS-690-CancelCustomerBill-v1
+refs/remotes/origin/GS-692-CreateCustomerAccountReceivable-v1
+refs/remotes/origin/GS-693-ReservePhysicalResource-v1
+refs/remotes/origin/GS-694-UnreservePhysicalResource-v1
+refs/remotes/origin/GS-695-UpdateCustomerAccountReceivable-v1
+refs/remotes/origin/GS-697-CreateServiceRequest-v1
+refs/remotes/origin/GS-698-GetCustomerUsageDetails-v1
+refs/remotes/origin/GS-699-GetTroubleTicketWorkInfo-v1
+refs/remotes/origin/GS-700-GetBillingAccountCoexist-v1
+refs/remotes/origin/GS-701-GetTroubleTicketIncident-v1
+refs/remotes/origin/GS-702-UpdateServiceRequest-v1
+refs/remotes/origin/GS-703-GetTroubleTicketWorkLog-v1
+refs/remotes/origin/GS-704-GetTroubleTicketWorkOrder-v1
+refs/remotes/origin/GS-705-CreateAppliedCustomerBillingCreditRequest-v1
+refs/remotes/origin/GS-706-GetSIMCardStatus-v1
+refs/remotes/origin/GS-710-PublishProductOrder-v1
+refs/remotes/origin/GS-711-CancelAppliedCustomerBillingCredit-v1
+refs/remotes/origin/GS-715-CreateAppliedCustomerBillingCharge-v2
+refs/remotes/origin/GS-717-SubmitDeviceTransfer-v1
+refs/remotes/origin/GS-718-GetServiceRequest-v1
+refs/remotes/origin/GS-719-GetCustomerPhysicalDevice-v1
+refs/remotes/origin/GS-720-UpdateCustomerAccount-v1
+refs/remotes/origin/GS-722-CreateAppliedCustomerBillingCharge-v2
+refs/remotes/origin/GS-723-GetBundledProductOffering-v1
+refs/remotes/origin/GS-724-UpdateServiceRequest-v1
+refs/remotes/origin/GS-725-CreateServiceRequest-v1
+refs/remotes/origin/GS-726-GetContract-v1
+refs/remotes/origin/GS-727-GetCustomerAccount-v1
+refs/remotes/origin/GS-728-GetServiceRequest-v1
+refs/remotes/origin/GS-729-CreateNotificationFolioCustomerBill-v1
+refs/remotes/origin/GS-730-GetAvailableMSISDN-v1
+refs/remotes/origin/GS-731-CreateCustomerAccount-v1
+refs/remotes/origin/GS-732-GetAsset-v1
+refs/remotes/origin/GS-734-CreateCustomerBill-v1
+refs/remotes/origin/GS-735-UpdateProductOrder-v1
+refs/remotes/origin/GS-739-SubmitCustomerBill-v1
+refs/remotes/origin/GS-740-GetPartyLogicalResourceFamily-v1
+refs/remotes/origin/GS-741-UpdateServiceRequestCredit-v1
+refs/remotes/origin/GS-742-CreateClaimRequest-v1
+refs/remotes/origin/GS-744-GetCustomerPhysicalDeviceHistory-v1
+refs/remotes/origin/GS-745-ValidateTechnicalService-v1
+refs/remotes/origin/GS-747-CreatePortabilityOrder-v1
+refs/remotes/origin/GS-751-GetPhysicalDeviceAvailability-v2
+refs/remotes/origin/GS-752-UpdateTroubleTicketWorkOrder-v1
+refs/remotes/origin/GS-753-CreateTroubleTicketWorkOrder-v1
+refs/remotes/origin/GS-754-GetLocationDetails-v1
+refs/remotes/origin/GS-755-GetPartyIdentification-v1
+refs/remotes/origin/GS-757-CreateBillingCharge-v1
+refs/remotes/origin/GS-758-GetPrimaryCenter-v1
+refs/remotes/origin/GS-759-GetFeasibilityProduct-v1
+refs/remotes/origin/GS-760-GetProductCoverage-v1
+refs/remotes/origin/GS-761-ValidateCustomerPortabilityOrder-v1
+refs/remotes/origin/GS-762-GetDeliverySlot-v1
+refs/remotes/origin/GS-763-GetPartyUser-v1
+refs/remotes/origin/GS-764-GetSIMCardDetails-v1
+refs/remotes/origin/GS-765-GetLocation-v1
+refs/remotes/origin/GS-766-CreateClaim-v1
+refs/remotes/origin/GS-767-GetRunningOrders-v1
+refs/remotes/origin/GS-769-GetAppliedBillingDocument-v1
+refs/remotes/origin/GS-772-GetStore-v1
+refs/remotes/origin/GS-773-GetPhysicalResourceStatus-v1
+refs/remotes/origin/GS-774-GetStoreList-v1
+refs/remotes/origin/GS-776-GetCountingDetail-v1
+refs/remotes/origin/GS-777-GetTransferList-v1
+refs/remotes/origin/GS-778-CreateReceptionTransfer-v1
+refs/remotes/origin/GS-779-GetJustificationType-v1
+refs/remotes/origin/GS-780-GetStoreStockInventory-v1
+refs/remotes/origin/GS-781-DeleteCounting-v1
+refs/remotes/origin/GS-783-GetMovStockInventory-v1
+refs/remotes/origin/GS-784-GetCountingList-v1
+refs/remotes/origin/GS-785-GetMovementType-v1
+refs/remotes/origin/GS-786-GetMovementPhysicalResource-v1
+refs/remotes/origin/GS-788-CreateStockInventoryTransferRequest-v1
+refs/remotes/origin/GS-789-CancelStockInventoryTransferRequest-v1
+refs/remotes/origin/GS-791-GetStoreList-v1
+refs/remotes/origin/GS-792-GetMovementType-v1
+refs/remotes/origin/GS-793-GetTransferList-v1
+refs/remotes/origin/GS-794-GetTransferDetail-v1
+refs/remotes/origin/GS-795-GetMovStockInventory-v1
+refs/remotes/origin/GS-796-GetStoreStockInventory-v1
+refs/remotes/origin/GS-797-CreateReceptionTransfer-v1
+refs/remotes/origin/GS-798-CreateOutgoingTransferRequest-v1
+refs/remotes/origin/GS-799-CreateOutgoingTransferRequest-v1
+refs/remotes/origin/GS-800-CancelStockInventoryTransferRequest-v1
+refs/remotes/origin/GS-801-GetPhysicalResourceStatus-v1
+refs/remotes/origin/GS-802-CreateStockInventoryTransferRequest-v1
+refs/remotes/origin/GS-803-GetMovementPhysicalResource-v1
+refs/remotes/origin/GS-804-GetReserveList-v1
+refs/remotes/origin/GS-805-CreateCountingStore-v1
+refs/remotes/origin/GS-806-CreateInternalControl-v1
+refs/remotes/origin/GS-807-GetCountingDetail-v1
+refs/remotes/origin/GS-808-GetCountingList-v1
+refs/remotes/origin/GS-809-GetJustificationType-v1
+refs/remotes/origin/GS-810-GetInventoryMovement-v1
+refs/remotes/origin/GS-811-UpdateStatusJustification-v1
+refs/remotes/origin/GS-812-UpdateStatusJustification-v1
+refs/remotes/origin/GS-813-CreateInternalControl-v1
+refs/remotes/origin/GS-814-DeleteCounting-v1
+refs/remotes/origin/GS-815-GetInternalControl-v1
+refs/remotes/origin/GS-816-GetInventoryMovement-v1
+refs/remotes/origin/GS-817-CreateCountingStore-v1
+refs/remotes/origin/GS-819-GetCustomerAccount-v1
+refs/remotes/origin/GS-821-GetAssetRoaming-v1
+refs/remotes/origin/GS-822-GetTroubleTicketIncidentDetails-v1
+refs/remotes/origin/GS-823-PublishPhysicalResourceNotification-v1
+refs/remotes/origin/GS-824-CreateFolioCustomerBill-v1
+refs/remotes/origin/GS-828-CreateBillingCharge-v1
+refs/remotes/origin/GS-829-ValidateBillingCreditDebitNote-v1
+refs/remotes/origin/GS-830-DeleteFolioCustomerBill-v1
+refs/remotes/origin/GS-831-CreateWorkOrderRequiredInventory-v1
+refs/remotes/origin/GS-832-CreateWorkOrderCustomerInventory-v1
+refs/remotes/origin/GS-834-GetPartyIdentificationQuiz-v1
+refs/remotes/origin/GS-835-SubmitPartyIdentificationQuiz-v1
+refs/remotes/origin/GS-836-CancelAppliedCustomerBillingCredit-v1
+refs/remotes/origin/GS-839-GetDocumentBill-v1
+refs/remotes/origin/GS-841-ValidateCustomerUniqueKey-v1
+refs/remotes/origin/GS-842-GetFeasibilityAuth-v1
+refs/remotes/origin/GS-843-AdjustBillingNegative-v1
+refs/remotes/origin/GS-844-ValidateCustomerLineOwnership-v1
+refs/remotes/origin/GS-845-SendMessage-v1
+refs/remotes/origin/GS-846-GetPhysicalResourceOwner-v1
+refs/remotes/origin/GS-847-UpdateDocumentMetaDataList-v1
+refs/remotes/origin/GS-848-GetUserStore-v1
+refs/remotes/origin/GS-849-GetPhysicalDeviceAvailability-v2
+refs/remotes/origin/GS-851-GetPartyIdentificationQuiz-v1
+refs/remotes/origin/GS-852-SubmitPartyIdentificationQuiz-v1
+refs/remotes/origin/GS-854-GetCustomerUsageDetails-v1
+refs/remotes/origin/GS-855-CreateAppliedCustomerBillingCreditRequest-v1
+refs/remotes/origin/GS-856-PublishClickCall-v1
+refs/remotes/origin/GS-857-CreateProductOrder-v1
+refs/remotes/origin/GS-859-UpdateWorkOrderScheduleBalance-v1
+refs/remotes/origin/GS-860-CreateCustomerAccountRequest-v1
+refs/remotes/origin/GS-861-GetTransferDetail-v1
+refs/remotes/origin/GS-863-GetInternalControl-v1
+refs/remotes/origin/GS-865-CreateStore-v1
+refs/remotes/origin/GS-866-AdjustStockInventory-v1
+refs/remotes/origin/GS-867-ReleasePhysicalResource-v1
+refs/remotes/origin/GS-868-CreateAppliedCustomerBillingCredit-v1
+refs/remotes/origin/GS-869-UpdateStore-v1
+refs/remotes/origin/GS-871-UpdateEquipmentAssociation-v1
+refs/remotes/origin/GS-873-GetEquipmentAssociation-v1
+refs/remotes/origin/GS-875-UpdatePhysicalResource-v1
+refs/remotes/origin/GS-879-GetMarketingCampaign-v2
+refs/remotes/origin/GS-881-GetPartyIdentification-v2
+refs/remotes/origin/GS-882-CreateReactivationOrder-v1
+refs/remotes/origin/GS-883-DeleteRequiredInventory-v1
+refs/remotes/origin/GS-884-GetCustomerInventoryRequired-v1
+refs/remotes/origin/GS-885-GetMarketingCampaign-v2
+refs/remotes/origin/GS-886-CancelInventoryEntityProject-v1
+refs/remotes/origin/GS-887-GetWorkOrderItems-v1
+refs/remotes/origin/GS-888-UpdateCustomerAccount-v1
+refs/remotes/origin/GS-890-UpdateUser-v1
+refs/remotes/origin/GS-891-CreateInventoryEntityProject-v1
+refs/remotes/origin/GS-892-CancelWorkOrderScheduleBalance-v1
+refs/remotes/origin/GS-894-GetWorkOrderScheduleBalance-v1
+refs/remotes/origin/GS-895-GetStoreLocation-v1
+refs/remotes/origin/GS-896-ReservePhysicalResource-v1
+refs/remotes/origin/GS-898-GetReserveList-v1
+refs/remotes/origin/GS-901-UpdateBusinessClaimRequest-v1
+refs/remotes/origin/GS-902-CancelBusinessClaimRequest-v1
+refs/remotes/origin/GS-903-SubmitPartyIdentificationClaimQuiz-v1
+refs/remotes/origin/GS-904-AdjustInventoryEntityProject-v1
+refs/remotes/origin/GS-905-GetInventoryEntityProject-v1
+refs/remotes/origin/GS-905-GetInventoryEntityProyect-v1
+00:02:23.200 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_GetInventoryEntityProyect_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_GetInventoryEntityProyect_v1|refs/remotes/origin/GS-905-GetInventoryEntityProyect-v1
+refs/remotes/origin/GS-906-CreateReactivationOrder-v1
+refs/remotes/origin/GS-907-UnreservePhysicalResource-v1
+refs/remotes/origin/GS-908-PublishInventoryEntityProject-v1
+refs/remotes/origin/GS-909-GetPartyIdentificationClaimQuiz-v1
+refs/remotes/origin/GS-910-ReserveStoreStockInventory-v1
+refs/remotes/origin/GS-911-GetPhysicalResourceStatus-v1
+refs/remotes/origin/GS-912-CreateWorkOrderScheduleBalance-v1
+refs/remotes/origin/GS-913-ReservePhysicalResource-v1
+refs/remotes/origin/GS-914-GetSIMCardDetails-v1
+refs/remotes/origin/GS-915-GetCustomerInfo-v2
+refs/remotes/origin/GS-916-SubmitCustomerBill-v1
+refs/remotes/origin/GS-917-CreateEquipmentWithdrawal-v1
+00:04:00.800 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreateEquipmentWithdrawal_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreateEquipmentWithdrawal_v1|refs/remotes/origin/GS-917-CreateEquipmentWithdrawal-v1
+refs/remotes/origin/GS-918-CreateEquipmentProvision-v1
+00:04:08.023 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreateEquipmentProvision_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreateEquipmentProvision_v1|refs/remotes/origin/GS-918-CreateEquipmentProvision-v1
+refs/remotes/origin/GS-919-GetCreditUsed-v1
+refs/remotes/origin/GS-920-GetAppliedCustomerBillingAdjustment-v1
+refs/remotes/origin/GS-921-CreateUser-v1
+refs/remotes/origin/GS-922-CreateEquipmentChange-v1
+00:04:32.134 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_CreateEquipmentChange_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_CreateEquipmentChange_v1|refs/remotes/origin/GS-922-CreateEquipmentChange-v1
+refs/remotes/origin/GS-923-DeleteUser-v1
+refs/remotes/origin/GS-924-GetActivities-v1
+refs/remotes/origin/GS-925-CreateTroubleTicketIncident-v1
+refs/remotes/origin/GS-926-CreateProductOrder-v1
+refs/remotes/origin/GS-927-DeleteResourceInventory-v1
+refs/remotes/origin/GS-928-UpdateCustomerBillAccount-v1
+refs/remotes/origin/GS-930-UpdateInventoryEntityProject-v1
+refs/remotes/origin/GS-931-PublishProductOrder-v1
+refs/remotes/origin/GS-932-CreateDocumentListSign-v1
+refs/remotes/origin/GS-933-CreateResourceInventory-v1
+refs/remotes/origin/GS-934-CancelCustomerUniqueKey-v1
+refs/remotes/origin/GS-935-UpdateCustomerUniqueKey-v1
+refs/remotes/origin/GS-936-GetBillingAccountCoexist-v1
+refs/remotes/origin/GS-937-CreateCustomerUniqueKey-v1
+refs/remotes/origin/GS-938-CreateBusinessClaimRequest-v1
+refs/remotes/origin/GS-939-CancelBusinessClaimRequest-v1
+refs/remotes/origin/GS-940-GetBusinessClaimRequest-v1
+refs/remotes/origin/GS-941-GetFeasibilityCoexist-v1
+refs/remotes/origin/GS-942-PublishProductOffering-v1
+refs/remotes/origin/GS-943-CreateAppliedCustomerBillingCharge-v2
+refs/remotes/origin/GS-945-GetCustomerStoreCredit-v1
+refs/remotes/origin/GS-946-ValidateProductBlackList-v1
+refs/remotes/origin/GS-947-GetClaimDetailsCoexist-v1
+refs/remotes/origin/GS-948-CreateIdentitiesServices-v1
+refs/remotes/origin/GS-949-CreateTroubleTicket-v1
+refs/remotes/origin/GS-950-GetTechnicalServiceCoexist-v1
+refs/remotes/origin/GS-951-CancelAppliedCustomerBillingCredit-v1
+refs/remotes/origin/GS-952-GetUser-v1
+refs/remotes/origin/GS-953-CreateProductOrder-v1
+refs/remotes/origin/GS-954-UpdateProductOrder-v1
+refs/remotes/origin/GS-955-UpdateProductOrder-v1
+refs/remotes/origin/GS-956-GetProductOrder-v1
+refs/remotes/origin/GS-957-CloseDeliveryOrder-v1
+refs/remotes/origin/GS-958-GetRecordingURL-v1
+refs/remotes/origin/GS-959-CreateAppliedCustomerBillingCharge-v2
+refs/remotes/origin/GS-960-CreateProductOrderRequest-v1
+refs/remotes/origin/GS-961-UpdateBusinessClaimRequest-v1
+refs/remotes/origin/GS-962-GetTroubleTicketWorkOrderDetails-v1
+refs/remotes/origin/GS-963-PublishProductOrder-v1
+refs/remotes/origin/GS-964-GetAppliedBillingDocumentDetails-v1
+refs/remotes/origin/GS-966-GetTroubleTicketIncidentClaims-v1
+refs/remotes/origin/GS-968-UpdateCustomerAccount-v1
+refs/remotes/origin/GS-970-DispatchInventoryEntitiyProject-v1
+00:09:45.676 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_DispatchInventoryEntitiyProject_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_DispatchInventoryEntitiyProject_v1|refs/remotes/origin/GS-970-DispatchInventoryEntitiyProject-v1
+refs/remotes/origin/GS-971-GetTroubleTicketIncidentHistory-v1
+refs/remotes/origin/GS-971-GetTroubleTiketIncidentHistory-v1
+00:09:55.896 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_GetTroubleTiketIncidentHistory_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_GetTroubleTiketIncidentHistory_v1|refs/remotes/origin/GS-971-GetTroubleTiketIncidentHistory-v1
+refs/remotes/origin/GS-972-CancelMarketingCampaign-v1
+refs/remotes/origin/GS-974-CreateCustomerAccountReceivable-v1
+refs/remotes/origin/GS-975-ValidateCustomerBlackListReason-v1
+refs/remotes/origin/GS-976-TokenInventoryEntityProject-v1
+refs/remotes/origin/GS-978-PublishWorkOrder-v1
+00:10:31.629 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_PublishWorkOrder_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_PublishWorkOrder_v1|refs/remotes/origin/GS-978-PublishWorkOrder-v1
+refs/remotes/origin/GS-979-GetMarketingCampaign-v3
+refs/remotes/origin/GS-980-UpsertFinancingInfo-v2
+refs/remotes/origin/GS-981-GetTransferDetail-v1
+refs/remotes/origin/GS-982-CreateTechnicalOrderTerritory-v1
+refs/remotes/origin/GS-983-GetTechnicalResourceDetails-v1
+refs/remotes/origin/GS-984-UpdateDocument-v1
+refs/remotes/origin/GS-985-UpdateLoyaltyVoucher-v1
+00:11:17.473 [main] ERROR cl.entel.tde.soa.integration.Bootstrap - d:\Projects\Repository\dev_arq20\01.FUENTES\ES_UpdateLoyaltyVoucher_v1\01.OSB\01.WORKSPACE\ENTEL_ServiceBusApp\ES_UpdateLoyaltyVoucher_v1|refs/remotes/origin/GS-985-UpdateLoyaltyVoucher-v1
+refs/remotes/origin/GS-986-CreateLoyaltyTransfer-v1
+refs/remotes/origin/GS-987-GetCustomerPhysicalDevice-v1
+refs/remotes/origin/GS-989-CreateLoyaltyEarn-v2
+refs/remotes/origin/GS-990-UpdateCustomerAccountAsset-v1
+refs/remotes/origin/GS-991-GetTechnicalResourceConfig-v1
+refs/remotes/origin/GS-991-GetTechnicalResourceConfiguration-v1
+refs/remotes/origin/GS-992-GetCustomerAccountBalance-v2
+refs/remotes/origin/GS-993-GetTechnicalResourceCategory-v1
+refs/remotes/origin/GS-994-CreateBillingCharge-v1
+refs/remotes/origin/GS-995-GetCustomerAccountBalanceAndCharge-v2
+refs/remotes/origin/GS-996-CreateMarketingContextualEvent-v1
+refs/remotes/origin/GS-997-GetCustomerPaymentBalance-v1
+refs/remotes/origin/GS-998-CreateReturnOutOrder-v1
+refs/remotes/origin/GS-999-CreateAddonOrder-v1
+refs/remotes/origin/GS-AAA-ServiProductivo-v1
+
+> Task :App.main() FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':App.main()'.
+> Process 'command 'C:/Java/jdk1.8.0_221/bin/java.exe'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.6.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 1h 38m 38s
+3 actionable tasks: 2 executed, 1 up-to-date
+0:24:11: Task execution finished 'App.main()'.
