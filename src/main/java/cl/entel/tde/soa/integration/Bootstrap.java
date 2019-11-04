@@ -64,7 +64,6 @@ public class Bootstrap {
         return parameters;
     }
 
-    @PostConstruct
     public void runEntity(){
         try{
             List<Ref> branchs = this.getRefsWithBranchs();
