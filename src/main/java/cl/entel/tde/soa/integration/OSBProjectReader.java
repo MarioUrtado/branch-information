@@ -62,7 +62,6 @@ public class OSBProjectReader {
         return parameters;
     }
 
-    @PostConstruct
     public void runEntity(){
         try{
             List<Ref> branchs = this.getRefsWithBranchs();

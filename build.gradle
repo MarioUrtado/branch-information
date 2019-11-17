@@ -31,7 +31,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("joda-time:joda-time:2.9.9")
-    compile("org.springframework.boot:spring-boot-starter"){
+    compile("org.springframework.boot:spring-boot-starter-web"){
         exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
     }
     compile( 'org.springframework.boot:spring-boot-starter-data-mongodb'){

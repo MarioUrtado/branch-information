@@ -2,6 +2,7 @@ package cl.entel.tde.soa.integration.service;
 
 import cl.entel.tde.soa.integration.domain.Service;
 import cl.entel.tde.soa.integration.domain.Target;
+import cl.entel.tde.soa.integration.repository.ServiceImplRepository;
 import cl.entel.tde.soa.integration.repository.ServiceRepository;
 import cl.entel.tde.soa.integration.repository.TargetRepository;
 import org.slf4j.Logger;
@@ -22,6 +23,9 @@ public class ServiceService {
 
     @Autowired
     private TargetRepository targetRepository;
+
+    @Autowired
+    private ServiceImplRepository serviceImplRepository;
 
     public ServiceService(){
 
@@ -69,6 +73,9 @@ public class ServiceService {
             targetRepository.save(newTarget);
 
         }
+    }
+    public List<Service> find(String name, String operation,  String code, String version){
+        return this.serviceImplRepository.find(name, operation, code, version);
     }
 
 }
