@@ -1,6 +1,5 @@
 package cl.entel.tde.soa.integration;
 
-import cl.entel.tde.soa.integration.domain.Branch;
 import cl.entel.tde.soa.integration.domain.EntityBus;
 import cl.entel.tde.soa.integration.domain.Service;
 import cl.entel.tde.soa.integration.domain.Target;
@@ -8,7 +7,6 @@ import cl.entel.tde.soa.integration.model.builder.AdapterReader;
 import cl.entel.tde.soa.integration.model.builder.ModelBuilder;
 import cl.entel.tde.soa.integration.service.ServiceService;
 import cl.entel.tde.soa.integration.util.GitUtils;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.jgit.api.ListBranchCommand;
 import org.eclipse.jgit.lib.Ref;
 import org.slf4j.Logger;
@@ -28,7 +26,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
-public class Bootstrap {
+public class OSBProjectReader {
 
     @Autowired
     private ModelBuilder modelBuilder;
@@ -45,7 +43,7 @@ public class Bootstrap {
     @Autowired
     private ServiceService serviceService;
 
-    Logger logger = LoggerFactory.getLogger(Bootstrap.class);
+    Logger logger = LoggerFactory.getLogger(OSBProjectReader.class);
 
     public Map<String, String> readBranch(String branchName){
         Map<String, String> parameters = new HashMap<>();
